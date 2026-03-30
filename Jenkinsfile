@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t jarvis1007/cartservice:latest:latest ."
+                        sh "docker build -t jarvis1007/cartservice:latest ."
                     }
                 }
             }
